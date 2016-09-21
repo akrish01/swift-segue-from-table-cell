@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6356EC1D91409A006892FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6356EB1D91409A006892FE /* DetailViewController.swift */; };
 		2EF6420D1D8FE53700C1AD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6420C1D8FE53700C1AD35 /* AppDelegate.swift */; };
 		2EF6420F1D8FE53700C1AD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6420E1D8FE53700C1AD35 /* ViewController.swift */; };
 		2EF642121D8FE53700C1AD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF642101D8FE53700C1AD35 /* Main.storyboard */; };
 		2EF642141D8FE53700C1AD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF642131D8FE53700C1AD35 /* Assets.xcassets */; };
 		2EF642171D8FE53700C1AD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF642151D8FE53700C1AD35 /* LaunchScreen.storyboard */; };
 		2EF642221D8FE53700C1AD35 /* tableViewSeguesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF642211D8FE53700C1AD35 /* tableViewSeguesUITests.swift */; };
+		2EF6422D1D8FE64200C1AD35 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6422C1D8FE64200C1AD35 /* CTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E6356EB1D91409A006892FE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2EF642091D8FE53700C1AD35 /* tableViewSegues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewSegues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF6420C1D8FE53700C1AD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF6420E1D8FE53700C1AD35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		2EF6421D1D8FE53700C1AD35 /* tableViewSeguesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewSeguesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF642211D8FE53700C1AD35 /* tableViewSeguesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewSeguesUITests.swift; sourceTree = "<group>"; };
 		2EF642231D8FE53700C1AD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF6422C1D8FE64200C1AD35 /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				2EF642131D8FE53700C1AD35 /* Assets.xcassets */,
 				2EF642151D8FE53700C1AD35 /* LaunchScreen.storyboard */,
 				2EF642181D8FE53700C1AD35 /* Info.plist */,
+				2EF6422C1D8FE64200C1AD35 /* CTableViewCell.swift */,
+				2E6356EB1D91409A006892FE /* DetailViewController.swift */,
 			);
 			path = tableViewSegues;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF6422D1D8FE64200C1AD35 /* CTableViewCell.swift in Sources */,
 				2EF6420F1D8FE53700C1AD35 /* ViewController.swift in Sources */,
 				2EF6420D1D8FE53700C1AD35 /* AppDelegate.swift in Sources */,
+				2E6356EC1D91409A006892FE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +396,7 @@
 				2EF642281D8FE53700C1AD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF642291D8FE53700C1AD35 /* Build configuration list for PBXNativeTarget "tableViewSeguesUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +405,7 @@
 				2EF6422B1D8FE53700C1AD35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

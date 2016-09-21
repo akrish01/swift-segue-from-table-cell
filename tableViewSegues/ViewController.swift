@@ -8,17 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableview: UITableView!
+    let content = ["A","B","C"]
+    let desc = ["Apple","BAll","Cat"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableview.dataSource = self
+        tableview.delegate = self
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath
+        indexPath: NSIndexPath) -> UITableViewCell{
+        if let cell = tableView.dequeueReusableCellWithIdentifier("cell") as? CTableViewCell{
+            cell.configureCell(content[indexPath.row])
+            return cell
+        } else{
+            return CTableViewCell()
+        }
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        return 1
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return content.count
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //print(indexPath.row)
+        
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
+        
+       viewController.commingData = desc[indexPath.row]
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
+    
 
 
 }
